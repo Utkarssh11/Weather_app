@@ -1,0 +1,109 @@
+@import url(main-style.css);
+
+body {
+    height: 100vh;
+    background-image: radial-gradient(circle at 69% 75%, hsla(65,0%,95%,0.05) 0%, hsla(65,0%,95%,0.05) 38%,transparent 38%, transparent 69%,transparent 69%, transparent 100%),radial-gradient(circle at 41% 58%, hsla(65,0%,95%,0.05) 0%, hsla(65,0%,95%,0.05) 3%,transparent 3%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 94% 91%, hsla(65,0%,95%,0.05) 0%, hsla(65,0%,95%,0.05) 48%,transparent 48%, transparent 55%,transparent 55%, transparent 100%),radial-gradient(circle at 68% 38%, hsla(65,0%,95%,0.05) 0%, hsla(65,0%,95%,0.05) 34%,transparent 34%, transparent 36%,transparent 36%, transparent 100%),radial-gradient(circle at 81% 20%, hsla(65,0%,95%,0.05) 0%, hsla(65,0%,95%,0.05) 40%,transparent 40%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 46% 37%, hsla(65,0%,95%,0.05) 0%, hsla(65,0%,95%,0.05) 37%,transparent 37%, transparent 76%,transparent 76%, transparent 100%),radial-gradient(circle at 49% 5%, hsla(65,0%,95%,0.05) 0%, hsla(65,0%,95%,0.05) 43%,transparent 43%, transparent 67%,transparent 67%, transparent 100%),radial-gradient(circle at 18% 58%, hsla(65,0%,95%,0.05) 0%, hsla(65,0%,95%,0.05) 4%,transparent 4%, transparent 20%,transparent 20%, transparent 100%),radial-gradient(circle at 43% 68%, hsla(65,0%,95%,0.05) 0%, hsla(65,0%,95%,0.05) 10%,transparent 10%, transparent 36%,transparent 36%, transparent 100%),linear-gradient(135deg, rgb(85, 133, 238),rgb(177, 145, 214));
+}
+
+#wrapper {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 28em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 3em 1.8em;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3.7em rgba(3, 46, 87, 0.2);
+    text-align: center;
+}
+
+#search-container {
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
+}
+
+#search-container input,
+#search-container button {
+    font-size: 1em;
+    outline: none;
+    border: none;
+}
+
+#search-container input {
+    background-color: transparent;
+    color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    padding: 0.7em;
+}
+
+#search-container input::placeholder {
+    color: #e5e5e5;
+}
+
+#search-container input:focus {
+    border-color: #ffffff;
+}
+
+#search-container button {
+    background-color: #ffffff;
+    color: #3c0e6a;
+    border-radius: 0.3em;
+}
+
+#result {
+    color: #ffffff;
+}
+
+#result h1 {
+    font-size: 4em;
+    margin: 0.3em 0 0.7em 0;
+    line-height: 0;
+}
+
+#result h2 {
+    font-size: 3em;
+    margin: 30px 0 15px 0;
+}
+
+#result img {
+    width: 6.2em;
+    margin: 0.6em 0 0 0;
+}
+
+#weather, #feels-like, #temp-container .temp {
+    font-weight: 100;
+}
+
+#weather {
+    margin-top: -15px;
+}
+
+#temp-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#temp-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+i.fa-solid {
+    color: #ffffff;
+    padding: 25px 0 7px 0;
+}
